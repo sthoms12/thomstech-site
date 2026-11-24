@@ -4,7 +4,6 @@
    ========================================================================== */
 
 :root {
-  /* Light theme — warm paper canvas + maritime slate ink + deep teal accent */
   --bg: #f6f6f2;
   --bg-subtle: #eeeee8;
   --surface: #ffffff;
@@ -68,7 +67,6 @@
   --shadow-card-hover: 0 2px 8px rgba(0, 0, 0, 0.36), 0 18px 36px -14px rgba(0, 0, 0, 0.70);
 }
 
-/* Reset & Base */
 *,
 *::before,
 *::after {
@@ -126,7 +124,6 @@ a {
   padding-inline: clamp(1.25rem, 4vw, 2.5rem);
 }
 
-/* Header & Navigation */
 .site-header {
   position: sticky;
   top: 0;
@@ -247,7 +244,6 @@ a {
   }
 }
 
-/* Hero Section */
 .hero {
   padding-block: clamp(4.25rem, 9vw, 7rem) clamp(3.5rem, 7vw, 5.25rem);
   border-bottom: 1px solid var(--border);
@@ -351,7 +347,6 @@ a {
   transform: translate(2px, -2px);
 }
 
-/* Section Layout */
 .section {
   padding-block: clamp(3.75rem, 7vw, 5.5rem);
   border-bottom: 1px solid var(--border);
@@ -396,7 +391,6 @@ a {
   color: var(--ink-muted);
 }
 
-/* Tools Showcase Grid */
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -521,7 +515,6 @@ a {
   color: var(--ink-muted);
 }
 
-/* Approach / Principles (Typographic 3-column strip) */
 .principles-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -557,7 +550,6 @@ a {
   color: var(--ink-secondary);
 }
 
-/* Connect / About Band */
 .connect-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
@@ -616,7 +608,6 @@ a {
   color: var(--accent);
 }
 
-/* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
   padding-block: 2rem;
@@ -638,7 +629,6 @@ a {
   font-size: 0.78rem;
 }
 
-/* Subtle progressive reveal */
 .reveal {
   opacity: 1;
   transform: translateY(0);
@@ -650,7 +640,6 @@ a {
   transform: translateY(12px);
 }
 
-/* Responsive breakpoints */
 @media (max-width: 860px) {
   .tools-grid {
     grid-template-columns: 1fr;

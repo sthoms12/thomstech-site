@@ -1,6 +1,6 @@
 # thomstech.com
 
-Personal hub and IT operations tools showcase for **Steve Thoms** (Microsoft Technology Lead).
+Standalone Astro static site for **Steve Thoms** (Microsoft Technology Lead) — personal hub and IT operations tools showcase.
 
 ## Featured tools
 
@@ -9,15 +9,18 @@ Personal hub and IT operations tools showcase for **Steve Thoms** (Microsoft Tec
 - **SeatLeak** (SaaS Seat Waste Calculator) — `https://seatleak.app/`
 - **M365 Barometer** — `https://www.m365-barometer.com/`
 
-## Stack & deployment
+## Cloudflare Pages settings
 
-Plain static HTML, Vanilla CSS, and lightweight progressive-enhancement JavaScript — zero build step and zero runtime dependencies.
-
-- **Cloudflare Pages**: Connect this repository (`sthoms12/thomstech-site`), leave the build command empty, set the build output directory to `.` (repository root), and attach the custom domain `thomstech.com`.
+- **Framework preset**: `Astro`
+- **Build command**: `npm run build`
+- **Build output directory**: `dist`
 
 ## Local commands
 
 ```bash
-npm test     # Run HTML, SEO, JSON-LD, and brand-boundary checks
-npm run preview  # Serve locally on http://localhost:4174
+npm install
+npm run dev      # Local dev server
+npm run build    # Production static build -> dist/
+npm test         # Validate dist/ HTML, JSON-LD, links, and brand boundaries
+npm run preview  # Preview built site locally
 ```

@@ -2,9 +2,15 @@
   "name": "thomstech-site",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Personal hub and IT operations tools showcase for Steve Thoms (thomstech.com)",
   "scripts": {
-    "test": "node scripts/validate.mjs",
-    "preview": "python3 -m http.server 4174"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "node scripts/validate.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.7.0"
   }
 }
